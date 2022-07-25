@@ -5,6 +5,7 @@ import {
 import {
   DropdownItem,
   FocusedItemData,
+  RenderEntityPreviews,
   SearchBar,
   UniversalResults,
 } from "@yext/answers-react-components";
@@ -34,7 +35,7 @@ function App() {
     );
   };
 
-  const renderEntityPreviews = (
+  const renderEntityPreviews: RenderEntityPreviews = (
     autocompleteLoading: boolean,
     verticalKeyToResults: Record<string, VerticalResultsData>,
     onSubmit: (value: string, _index: number, itemData: FocusedItemData) => void
